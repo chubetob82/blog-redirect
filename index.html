@@ -4,19 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Moved to www.bolivarjesus.com</title>
-<link rel="canonical" href="https://www.bolivarjesus.com/">
+<link rel="canonical" href="https://www.bolivarjesus.com/blog/">
 <meta name="robots" content="noindex, follow">
 <script>
-/* Forward the whole path, so every link ever shared for blog.bolivarjesus.com still lands.
-   GitHub Pages serves 404.html for any path it does not have, which is every path here, so
-   this one file covers the entire host. index.html is the same file, and exists only so that
-   the bare hostname answers 200 rather than 404 while it redirects. */
+/* The root of blog.bolivarjesus.com, and only the root. Somebody arriving here typed the
+   name of the blog, so send them to the blog rather than to the CV at the site root. Every
+   other path is handled by 404.html, which carries the path across unchanged. */
 (function () {
-  var to = "https://www.bolivarjesus.com" + location.pathname + location.search + location.hash;
-  location.replace(to);
+  location.replace("https://www.bolivarjesus.com/blog/" + location.search + location.hash);
 })();
 </script>
-<meta http-equiv="refresh" content="2;url=https://www.bolivarjesus.com/">
+<meta http-equiv="refresh" content="2;url=https://www.bolivarjesus.com/blog/">
 <style>
 :root{color-scheme:light dark;--ground:#F5F4EF;--ink:#16232E;--muted:#6B7480;--acc:#1F5FAE}
 @media (prefers-color-scheme:dark){:root{--ground:#111A22;--ink:#EEF1F4;--muted:#8E99A4;--acc:#5893DC}}
@@ -30,7 +28,7 @@ a{color:var(--acc)}
 <body>
 <div class="w">
   <h1>This has moved</h1>
-  <p>The writing now lives at <a href="https://www.bolivarjesus.com/blog/">www.bolivarjesus.com</a>, along with everything else.</p>
+  <p>The writing now lives at <a href="https://www.bolivarjesus.com/blog/">www.bolivarjesus.com/blog</a>, alongside the CV and everything else.</p>
   <p>Taking you there now.</p>
 </div>
 </body>

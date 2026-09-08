@@ -4,19 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Moved to www.bolivarjesus.com</title>
-<link rel="canonical" href="https://www.bolivarjesus.com/">
 <meta name="robots" content="noindex, follow">
 <script>
-/* Forward the whole path, so every link ever shared for blog.bolivarjesus.com still lands.
-   GitHub Pages serves 404.html for any path it does not have, which is every path here, so
-   this one file covers the entire host. index.html is the same file, and exists only so that
-   the bare hostname answers 200 rather than 404 while it redirects. */
+/* Forward the whole path, so every link ever shared for blog.bolivarjesus.com still lands:
+   /KangarooPegRevisited2026/es/?lang=es arrives at the same path on www.
+
+   GitHub Pages serves this file for any path the repository does not have, which is every path
+   except the root. The root has index.html, and that one is deliberately different: the bare
+   hostname is not a page anyone bookmarked, it is someone typing the name of the blog, so it
+   goes to /blog/ rather than to the CV at /. */
 (function () {
   var to = "https://www.bolivarjesus.com" + location.pathname + location.search + location.hash;
   location.replace(to);
 })();
 </script>
-<meta http-equiv="refresh" content="2;url=https://www.bolivarjesus.com/">
+<!-- The script carries the path across. This refresh cannot: it is a static string, so with
+     JavaScript off it lands on the site root and the link below is the way through. -->
+<meta http-equiv="refresh" content="4;url=https://www.bolivarjesus.com/">
 <style>
 :root{color-scheme:light dark;--ground:#F5F4EF;--ink:#16232E;--muted:#6B7480;--acc:#1F5FAE}
 @media (prefers-color-scheme:dark){:root{--ground:#111A22;--ink:#EEF1F4;--muted:#8E99A4;--acc:#5893DC}}
@@ -30,8 +34,8 @@ a{color:var(--acc)}
 <body>
 <div class="w">
   <h1>This has moved</h1>
-  <p>The writing now lives at <a href="https://www.bolivarjesus.com/blog/">www.bolivarjesus.com</a>, along with everything else.</p>
-  <p>Taking you there now.</p>
+  <p>Everything that was here now lives on <a href="https://www.bolivarjesus.com/">www.bolivarjesus.com</a>, at the same path.</p>
+  <p>Taking you there now. If nothing happens, the <a href="https://www.bolivarjesus.com/blog/">writing is here</a>.</p>
 </div>
 </body>
 </html>
